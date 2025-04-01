@@ -6,17 +6,17 @@
 
 "use strict"
 
-function calculatearea() {
+function calculatevolume() {
   // input
-  const abase = parseInt(document.getElementById('a-base').value);
-  const bbase = parseInt(document.getElementById('b-base').value);
-  const height = parseInt(document.getElementById('height-length').value);
+  const length = parseInt(document.getElementById('length-m').value);
+  const width = parseInt(document.getElementById('width-m').value);
+  const height = parseInt(document.getElementById('height-m').value);
     
 
   // process
-    const trapezoidarea = [(abase + bbase) / 2] * height
+    const pyramidvolume = (length * width * height) /3
 
   // output
-  document.getElementById('area').innerHTML = 'area is:' + trapezoidarea + 'mm²'
+  document.getElementById('volume').innerHTML = 'volume is:' + pyramidvolume + 'mm³'
 }
 
